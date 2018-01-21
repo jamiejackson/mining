@@ -48,19 +48,31 @@ EndSection
 
 Overclock Script
 
+This only works if the X11 config is configured correctly and X is started.
 
+Install
 
 ```sh
 # download https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/files/nvidia-overclock.sh
 wget https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/f42de74da4144c67a61926b8fb78124a6436db49/files/nvidia-overclock.sh
 chmod a+x nvidia-overclock.sh
 ```
+Configure
 
-####
-# OVERCLOCK SCRIPT (only works if the X11 config is configured correctly and X is started)
-MY_RIG="mine"
-MY_WATT="90"	# it’s cool to use fewer watts. Literally. 120 is stock for a 1060, see how low you can go without crashing or losing hash rate.
-MY_CLOCK="50"	# increasing clock helps for some algorithms, makes no difference for others.  If it doesn’t help hash rate, you can even go negative. -200 drops clocks by 200 from stock.
-MY_MEM="600"	# Memory overclock has the greatest impact on ETH mining, less so on other algorithms. 600 usually works, see how high you can go. I have seen 1000 on some cards.
-MY_FAN="80"		# set as high as you can tolerate. 100 = full speed
+```sh
+export MY_RIG="mine"
+# it’s cool to use fewer watts. Literally. 120 is stock for a 1060, see how low you can go without crashing or losing hash rate.
+export MY_WATT="90"
+# increasing clock helps for some algorithms, makes no difference for others.  If it doesn’t help hash rate, you can even go negative. -200 drops clocks by 200 from stock.
+MY_CLOCK="50"
+# Memory overclock has the greatest impact on ETH mining, less so on other algorithms. 600 usually works, see how high you can go. I have seen 1000 on some cards.
+MY_MEM="600"
+# set as high as you can tolerate. 100 = full speed
+MY_FAN="80"	
+```
 
+Run
+
+```sh
+./ nvidia-overclock.sh
+```
