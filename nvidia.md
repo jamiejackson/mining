@@ -59,10 +59,23 @@ chmod a+x nvidia-overclock.sh
 ```
 Configure
 
+`settings.conf`:
 ```sh
-export MY_RIG="mine"
+# settings.conf: https://github.com/Cyclenerd/ethereum_nvidia_miner/blob/master/files/settings.conf
+# MY_ADDRESS : Your public ethereum address
+# MY_RIG     : Your mining rig name
+# MY_WATT    : Set power limit for all NVIDIA grafic cards.
+#              Input in watts (W). Allowed characters 0-9.
+#              Only on supported devices from Kepler family.
+# MY_CLOCK   : Set GPU graphics clock offset (GPUGraphicsClockOffset) for all NVIDIA grafic cards.
+#              Allowed characters 0-9 and -.
+# MY_MEM     : Set GPU memory transfer rate offset (GPUMemoryTransferRateOffset) for all NVIDIA grafic cards.
+#              Allowed characters 0-9.
+# MY_FAN     : Set GPU target fan speed (GPUTargetFanSpeed) for all NVIDIA grafic cards.
+#              Input in percent (%).
+MY_RIG="mine"
 # it’s cool to use fewer watts. Literally. 120 is stock for a 1060, see how low you can go without crashing or losing hash rate.
-export MY_WATT="90"
+MY_WATT="90"
 # increasing clock helps for some algorithms, makes no difference for others.  If it doesn’t help hash rate, you can even go negative. -200 drops clocks by 200 from stock.
 MY_CLOCK="50"
 # Memory overclock has the greatest impact on ETH mining, less so on other algorithms. 600 usually works, see how high you can go. I have seen 1000 on some cards.
