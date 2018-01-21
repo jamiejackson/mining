@@ -12,8 +12,8 @@ Error: `MP-BIOS BUG: 8254 Timer not connected to IO-APIC`
 ### Permanent
 
 * /etc/default/grub
-* add noapic to GRUB_CMDLINE_LINUX_DEFAULT
-* sudo update-grub
+* add `noapic` to `GRUB_CMDLINE_LINUX_DEFAULT`
+* `sudo update-grub`
 
 ## Excavator 
 
