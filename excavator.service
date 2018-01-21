@@ -1,0 +1,15 @@
+# /etc/systemd/system/excavator.service
+[Unit]
+Description=NiceHash Excavator
+After=network.target
+
+[Service]
+Type=simple
+User=jamie
+WorkingDirectory=/home/jamie
+ExecStart=/usr/bin/excavator -c excavator/excmd.json -wi 192.168.1.213 -wp 3456
+Nice=5
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
