@@ -1,3 +1,5 @@
+See Wiki
+
 # mining
 
 ## A8N-SLI Premium Mobo
@@ -14,10 +16,6 @@ Error: `MP-BIOS BUG: 8254 Timer not connected to IO-APIC`
 * /etc/default/grub
 * add `noapic` to `GRUB_CMDLINE_LINUX_DEFAULT`
 * `sudo update-grub`
-
-## NVIDIA
-
-[See wiki](../wiki/NVIDIA)
 
 ## Excavator 
 
