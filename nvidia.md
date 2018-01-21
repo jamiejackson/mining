@@ -28,14 +28,6 @@ Watch this for newer versions: https://launchpad.net/~graphics-drivers/+archive/
 ## Overclocking
 
 Ref: https://unix.stackexchange.com/questions/367584/how-to-adjust-nvidia-gpu-fan-speed-on-a-headless-node
-
-# X11
-
-Get card IDs:
-
-```sh
-lspci | grep "VGA compatible controller: NVIDIA"
-
 ```
 
 Make generic nvidia X11 config
@@ -43,6 +35,13 @@ Make generic nvidia X11 config
 ```sh
 nvidia-xconfig --enable-all-gpus
 ```
+
+# X11
+
+Get card IDs:
+
+```sh
+lspci | grep "VGA compatible controller: NVIDIA"
 
 Example config
 
