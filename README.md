@@ -57,3 +57,21 @@ apt-get -y install nvidia-390-dev nvidia-opencl-icd-390
 
 Watch this for newer versions: https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa
 
+## Misc
+
+### Sensor Metrics
+
+Install
+
+```sh
+# install util
+sudo apt-get install -y lm-sensors
+# detect & accept defaults
+(while :; do echo ""; done ) | sensors-detect
+```
+
+Run
+
+```sh
+sensors-detect
+```
