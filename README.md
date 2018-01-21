@@ -32,31 +32,6 @@ systemctl status excavator.service
 journalctl -u excavator -b -f
 ```
 
-## Cuda
-
-```sh
-# keep an eye on this for newer versions
-# http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/
-wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.1.85-1_amd64.deb
-sudo dpkg -i cuda-repo-ubuntu1604_9.1.85-1_amd64.deb
-sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
-sudo apt-get update
-sudo apt-get install -y cuda
-```
-
-Watch this for newer versions: http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/
-
-## NVIDIA Drivers
-
-```sh
-# NVIDIA drivers from graphics-drivers PPA
-sudo add-apt-repository ppa:graphics-drivers/ppa
-apt-get update
-apt-get -y install nvidia-390-dev nvidia-opencl-icd-390
-```
-
-Watch this for newer versions: https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa
-
 ## Misc
 
 ### Sensor Metrics
