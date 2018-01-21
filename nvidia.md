@@ -101,7 +101,7 @@ chmod a+x nvidia-overclock.sh
 ```
 Configure
 
-`settings.conf`:
+`~/settings.conf` (note the home directory location):
 ```sh
 # settings.conf: https://github.com/Cyclenerd/ethereum_nvidia_miner/blob/master/files/settings.conf
 # MY_ADDRESS : Your public ethereum address
