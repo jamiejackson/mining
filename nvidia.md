@@ -92,7 +92,7 @@ Overclock Script
 
 This only works if the X11 config is configured correctly and X is started.
 
-Install
+Install https://github.com/Cyclenerd/ethereum_nvidia_miner/blob/master/files/nvidia-overclock.sh
 
 ```sh
 # download https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/files/nvidia-overclock.sh
