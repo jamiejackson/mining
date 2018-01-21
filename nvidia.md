@@ -16,6 +16,11 @@ Watch this for newer versions: http://developer.download.nvidia.com/compute/cuda
 
 ## Drivers
 
+Remove any other drivers
+```sh
+sudo apt-get uninstall nvidia-3*
+```
+
 ```sh
 # NVIDIA drivers from graphics-drivers PPA
 sudo add-apt-repository ppa:graphics-drivers/ppa
