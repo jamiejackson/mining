@@ -15,6 +15,10 @@ Error: `MP-BIOS BUG: 8254 Timer not connected to IO-APIC`
 * add `noapic` to `GRUB_CMDLINE_LINUX_DEFAULT`
 * `sudo update-grub`
 
+## NVIDIA
+
+[See wiki](../wiki/NVIDIA)
+
 ## Excavator 
 
 Uses [`excavator.service`](./excavator.service)
