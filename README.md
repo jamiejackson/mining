@@ -2,14 +2,14 @@
 
 ## A8N-SLI Premium Mobo
 
-Error: `MP-BIOS BUG: 8254 Timer not connected to IO-APIC`
+## Error: `MP-BIOS BUG: 8254 Timer not connected to IO-APIC`
 
-## Temporary
+### Temporary
 
 * `f8` to get to grub boot list; `e` to edit; `f10` to boot
 * add `noapic` to boot options (second to last line)
 
-## Permanent
+### Permanent
 
 * /etc/default/grub
 * add noapic to GRUB_CMDLINE_LINUX_DEFAULT
