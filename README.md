@@ -17,6 +17,8 @@
 
 ## Excavator 
 
+Uses [`excavator.service`](./excavator.service)
+
 ```sh
 # enable
 sudo systemctl enable excavator
