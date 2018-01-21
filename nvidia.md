@@ -36,7 +36,7 @@ Make generic nvidia X11 config
 nvidia-xconfig --enable-all-gpus
 ```
 
-# X11
+## X11 Config
 
 Get card IDs:
 
@@ -80,6 +80,13 @@ Section "Screen"
     	Device     	"Device1"
 EndSection
 ```
+
+Restart X11
+
+```sh
+sudo service lightdm restart
+```
+
 
 Overclock Script
 
