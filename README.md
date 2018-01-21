@@ -76,5 +76,5 @@ yes "" | sudo sensors-detect
 Run
 
 ```sh
-sensors-detect
+sensors
 ```
