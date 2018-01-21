@@ -46,6 +46,7 @@ sudo apt-get install -y cuda
 
 ```
 # NVIDIA drivers from graphics-drivers PPA:
+# keep an eye on this for latest version
 # https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa
 sudo add-apt-repository ppa:graphics-drivers/ppa
 apt-get update
