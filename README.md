@@ -67,7 +67,10 @@ Install
 # install util
 sudo apt-get install -y lm-sensors
 # detect & accept defaults
-(while :; do echo ""; done ) | sensors-detect
+(while :; do echo ""; done ) | sudo sensors-detect
+
+# or detect & "yes" to all
+yes "" | sudo sensors-detect
 ```
 
 Run
